@@ -1,0 +1,133 @@
+/* Подключение обнуления */
+@import "../reset.css";
+
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+}
+
+/* Общие классы */
+.container {
+	max-width: 1230px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+/* Header */
+.header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #F1F1F1;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	position: relative;
+	padding: 0 12px 3px 0;
+	padding-right: 12px;
+	padding-bottom: 3px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1;
+	color: #000000;
+}
+
+.header__logo::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: #FFD645;
+	border-radius: 50%;
+}
+
+.header__list {
+	display: flex;
+	column-gap: 50px;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.header__button {
+	display: none;
+}
+
+.header__link {
+	color: #000000;
+	transition: color 0.3s;
+}
+
+.header__link:hover {
+	color: #FFD645;
+}
+
+.header__link.active {
+	color: #FFD645;
+}
+
+/* Battleship */
+
+main {
+	background-color: black;
+}
+
+#board {
+	position: relative;
+	width: 1024px;
+	height: 863px;
+	margin: auto;
+	background: url(../../img/Battleship/board.jpg) no-repeat;
+}
+
+#messagArea {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: rgb(83, 175, 19);
+}
+
+table {
+	position: absolute;
+	left: 173px;
+	top: 98px;
+	border-spacing: 0px;
+}
+
+td {
+	width: 94px;
+	height: 94px;
+}
+
+form {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 15px;
+	background-color: rgb(83, 175, 19);
+}
+
+form input {
+	background-color: rgb(152, 207, 113);
+	border-color: rgb(83, 175, 19);
+	font-size: 1em;
+}
+
+.hit {
+	background: url(../../img/Battleship/ship.png) center center no-repeat;
+}
+
+.miss {
+	background: url(../../img/Battleship/miss.png) center center no-repeat;
+}

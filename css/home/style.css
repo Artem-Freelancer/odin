@@ -1,0 +1,142 @@
+/* Подключение обнуления */
+@import "../reset.css";
+
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+}
+
+/* Общие классы */
+.container {
+	max-width: 1230px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+/* Header */
+.header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #F1F1F1;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	position: relative;
+	padding: 0 12px 3px 0;
+	padding-right: 12px;
+	padding-bottom: 3px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1;
+	color: #000000;
+}
+
+.header__logo::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: #FFD645;
+	border-radius: 50%;
+}
+
+.header__list {
+	display: flex;
+	align-items: flex-end;
+	column-gap: 50px;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.header__button {
+	display: none;
+}
+
+.header__link {
+	color: #000000;
+	transition: color 0.3s;
+}
+
+.header__link:hover {
+	color: #FFD645;
+}
+
+.header__link.active {
+	color: #FFD645;
+}
+
+/* Main */
+
+.main {
+	padding-top: 83px;
+	padding-bottom: 45px;
+}
+
+.main__row {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 30px;
+}
+
+.main__conten {
+	max-width: 500px;
+	margin-top: 124px;
+}
+
+.main__title {
+	font-weight: 600;
+	font-size: 44px;
+	margin-bottom: 20px;
+}
+
+.main__text {
+	line-height: 2;
+}
+
+/* Footer */
+
+.footer {
+	padding-top: 45px;
+	padding-bottom: 112px;
+}
+
+.footer__row {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	row-gap: 60px;
+	column-gap: 30px;
+}
+
+.footer__card {
+	flex: 1 1 0;
+	min-width: 315px;
+}
+
+.footer__img {
+	margin-bottom: 30px;
+}
+
+.footer__title {
+	margin-bottom: 10px;
+	font-weight: 600;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+.footer__descr {
+	line-height: 2;
+}

@@ -1,0 +1,152 @@
+/* Подключение обнуления */
+@import "../reset.css";
+
+/* Подключение шрифтов */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Rubik&display=swap');
+
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+body a:hover {
+	color: black;
+}
+
+body li {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 1110px;
+}
+
+.title-h1 {
+	font-size: 52px;
+}
+
+.website-item {
+	position: relative;
+	height: 262px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+
+.website-item01 {
+	background-image: url(../../img/portfolio/crappo.png);
+	background-position: center center;
+}
+
+.website-item02 {
+	background-image: url(../../img/portfolio/Магазин\ часов.png);
+}
+
+.website-item03 {
+	background-image: url(../../img/portfolio/nft.png);
+}
+
+.text-info {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 3.5%;
+	width: 100%;
+	background-color: #F1F1F1;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.text-info .col-4 {
+	text-align: right;
+}
+
+.text-info h3 {
+	font-size: 20px;
+	color: #000000;
+	margin-bottom: 0;
+}
+
+.text-info a {
+	font-size: 18px;
+	color: #000000;
+	border: 1.5px solid #000000;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 5px 29px;
+	margin-bottom: 0;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.text-info a:hover {
+	background-color: black;
+	color: white;
+}
+
+/* header */
+.header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #F1F1F1;
+}
+
+.header__list {
+	margin: 0;
+	padding: 0;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	position: relative;
+	padding: 0 12px 3px 0;
+	padding-right: 12px;
+	padding-bottom: 3px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1;
+	color: #000000;
+	text-decoration: none;
+}
+
+.header__logo::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: #FFD645;
+	border-radius: 50%;
+}
+
+.header__list {
+	display: flex;
+	column-gap: 50px;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.header__button {
+	display: none;
+}
+
+.header__link {
+	color: #000000;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.header__link:hover {
+	color: #FFD645;
+}
+
+.header__link.active {
+	color: #FFD645;
+}

@@ -1,0 +1,130 @@
+/* Подключение обнуления */
+@import "../reset.css";
+
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+body {
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+}
+
+/* Общие классы */
+.container {
+	max-width: 1230px;
+	padding: 0 30px;
+	margin: 0 auto;
+}
+
+/* Header */
+.header {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #D9D9D9;
+}
+
+.header__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	position: relative;
+	padding: 0 12px 3px 0;
+	padding-right: 12px;
+	padding-bottom: 3px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1;
+	color: #000000;
+}
+
+.header__logo::after {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: #FFD645;
+	border-radius: 50%;
+}
+
+.header__list {
+	display: flex;
+	column-gap: 50px;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.header__button {
+	display: none;
+}
+
+.header__link {
+	color: #000000;
+	transition: color 0.3s;
+}
+
+.header__link:hover {
+	color: #FFD645;
+}
+
+.header__link.active {
+	color: #FFD645;
+}
+
+/* main */
+
+.main {
+	font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+	background: #F1F1F1;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container_2 {
+	width: 100%;
+	display: flex;
+	padding: 0 20px;
+}
+
+.slide {
+	height: 80vh;
+	border-radius: 20px;
+	margin: 10px;
+	cursor: pointer;
+	color: #fff;
+	flex: 1;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+	position: absolute;
+	font-size: 24px;
+	bottom: 20px;
+	left: 20px;
+	margin: 0;
+	opacity: 0;
+}
+
+.slide.active {
+	flex: 10;
+}
+
+.slide.active h3 {
+	opacity: 1;
+	transition: opacity 0.3s ease-in 0.4s;
+}
